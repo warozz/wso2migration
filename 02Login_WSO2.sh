@@ -1,0 +1,1 @@
+./apimcli/apimcli login DEV_SGI -k -u admin -p Thailife@2019

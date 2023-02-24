@@ -1,0 +1,10 @@
+id,name,description,context,version,provider,status,production_endpoint,enable_CORS,accessControlAllowHeaders,accessControlAllowMethods,authType,application_name,isDefaultVersion,intial_Duration,maxDuration,Timeout_Duration,status,status_description
+93a6cb09-e018-4d8d-8163-900063d347cf,AgentSubmitTransfer,null,/AgentSubmitTransfer,1.0,admin,PUBLISHED,null,false,,,,,false,,,,CREATE_SUCCESS,null
+06458a16-84ca-4b1a-b4cf-6db620a6eeec,AlfrescoApi,null,/AlfrescoApi,1.0,admin,PUBLISHED,null,false,,,,CIMB-Application CSVApplication DefaultApplication  ,false,,,,CREATE_SUCCESS,null
+58a9aacd-54cd-4bea-ab13-063e549377a4,Alterate-insertAddress,Alterate-insertAddress,/AlterateWs/rest/alterate/insertaddress,1.0,admin,PUBLISHED,null,false,,,,Alterate ,false,,,,CREATE_SUCCESS,null
+null,AMLO_Checking,null,/AMLO_Checking,1.0,admin,PUBLISHED,null,false,,,,AMLOapplication ,false,,,,ERROR,Unauthenticated request
+null,API_DDC,API_DDC,/API_DDC/rest/insertCaseApplication/caseapp,1.0,admin,PUBLISHED,null,false,,,,,false,,,,ERROR,Unauthenticated request
+null,API_DDC_ECOM,API_DDC_ECOM,/API_DDC/rest/insertCaseApplication/caseappEcom,1.0,admin,PUBLISHED,null,false,,,,CoreRestWS  ,false,,,,ERROR,Unauthenticated request
+null,APIblacklistService,null,/APIblacklistService,1.0,admin,PUBLISHED,null,false,,,,ClaimBlacklist ,false,,,,ERROR,Unauthenticated request
+null,APICheckDataLegal,null,/request/checkdatalegal,1.0,admin,PUBLISHED,null,false,,,, ,false,,,,ERROR,Unauthenticated request
+null,APICheckDataLegal2,null,/request/checkdatalegal2,1.0,admin,CREATED,null,false,,,,,false,,,,ERROR,Unauthenticated request

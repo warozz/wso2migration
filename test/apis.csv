@@ -1,0 +1,2 @@
+id,name,description,context,version,provider,status,production_endpoint,enable_CORS,accessControlAllowHeaders,accessControlAllowMethods,authType,application_name,isDefaultVersion,intial_Duration,maxDuration,Timeout_Duration
+68a77643-46f4-4a98-ae72-4baea276befa,AgentSubmitTransfer,null,/AgentSubmitTransfer,1.0,admin,PUBLISHED,null,false,,,,,false,,,

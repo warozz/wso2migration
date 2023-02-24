@@ -1,0 +1,1 @@
+./apimcli/apimcli login DEV_SGI_DES -k

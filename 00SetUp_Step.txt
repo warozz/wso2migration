@@ -1,0 +1,47 @@
+docker run -it -p 8280:8280 -p 8243:8243 -p 9443:9443 --name api-manager wso2/wso2am:2.6.0-alpine
+
+
+docker exec -it da3292ded801bcd2cf73aa6388201c186a932b9231694d176cab6f7f14271ec2 /bin/sh
+
+
+docker exec -it --user=root 82ae85d2b4a1 sh
+// Install nano
+$ apk add nano
+$ nano --version
+
+
+$ docker logs --tail 1000 -f 82ae85d2b4a19d21d7d6af201b6a5b5f614d4ecac8efb847f3dd18f589e66b9d
+
+repository/conf/carbon.xml
+<HostName>{hostname}</HostName>
+<MgtHostName>{management-hostname}</MgtHostName>
+
+### CP api-import-export
+https://docs.wso2.com/display/AM260/Migrating+the+APIs+and+Applications+to+a+Different+Environment#MigratingtheAPIsandApplicationstoaDifferentEnvironment-Step1-DeploytheAPIimport/exporttool
+docker cp api-import-export-2.6.0-v17.war  82ae85d2b4a1:.
+
+
+###PATH Store wso2key
+WARNING: credentials are stored as a plain text in /Users/WRR/.wso2apimcli/keys.json
+
+
+curl -H "Authorization:Basic AbCdEfG" -F file=@"/Desktop/MyAPIFolder/myExportedAPI.zip" -k -X POST "https://localhost:9443/api-import-export-2.1.0-v3/import-api?preserveProvider=false"
+
+curl -H "Authorization:Basic YWRtaW46VGhhaWxpZmVAMjAxOQ==" -X GET "https://10.102.60.112:9443/api-import-export-2.1.0-v3/export-api?name=AlfrescoApi&version=1.0&provider=admin" -k > myExportedAPI.zip
+curl -H "Authorization:Basic YWRtaW46VGhhaWxpZmVAMjAxOQ==" -X GET "https://localhost:9443/api-import-export-2.6.0-v17/import-api?preserveProvider=false&name=AlfrescoApi&version=1.0&provider=admin" -k
+
+curl -H "Authorization:Basic YWRtaW46YWRtaW4=" -F file=@"AlfrescoApi.zip" -k -X POST "https://localhost:9443/api-import-export-2.6.0-v17/import-api"
+curl -H "Authorization:Basic YWRtaW46YWRtaW4="   -k -X POST "https://localhost:9443/api-import-export-2.6.0-v17/import-api"
+
+
+
+curl -s -k -d "grant_type=password&username=admin&password=Thailife@2019&scope=apim:api_view apim:api_create apim:subscribe apim:api_publish" -H "Authorization: Basic OHdSSV9vRjBxaFJsa1JpR1dFVnhZRFdjNkw4YTphMDBJY1hOdG9yOXVhVkR2TGNOZ0g4bmYyMTBh" https://10.102.60.112:8243/token
+curl -s -k -H "Authorization: Basic 98ff566d-5260-30d5-a8a9-55bb2edd5af5" -X GET "https://10.102.60.112:9443/api/am/publisher/v0.11/apis?limit=1000"
+
+
+curl -s -k -d "grant_type=password&username=admin&password=admin&scope=apim:api_view apim:api_create apim:subscribe apim:api_publish" -H "Authorization: Basic ckxTejU4T3c5U3ZLUUVQdlZScm5Zd1lkMGU4YTpvX0t4bmtva2NpdTBObW1BNVVuSTM2ZUNvZFFh" https://localhost:8243/token
+curl -s -k -H "Authorization: Basic ceec01ae-d71e-38c1-939c-ca19a6da63f0" -X GET "https://localhost:9443/api/am/publisher/v0.14/apis?limit=1000"
+
+
+
+/opt/wso2/wso2am-2.1.0/repository/deployment/server/jaggeryapps/publisher/site/themes/wso2/templates/item-design

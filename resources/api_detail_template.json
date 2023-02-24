@@ -1,0 +1,56 @@
+{
+  "id": "???",
+  "name": "???",
+  "description": "???",
+  "context": "???",
+  "version": "???",
+  "provider": "admin",
+  "status": "PUBLISHED",
+  "thumbnailUri": null,
+  "apiDefinition": "???",
+  "wsdlUri": null,
+  "responseCaching": "Disabled",
+  "cacheTimeout": 300,
+  "destinationStatsEnabled": null,
+  "isDefaultVersion": 1,
+  "type": "HTTP",
+  "transport": [
+    "http",
+    "https"
+  ],
+  "tags": [],
+  "tiers": [
+    "Unlimited"
+  ],
+  "apiLevelPolicy": null,
+  "authorizationHeader": null,
+  "maxTps": null,
+  "visibility": "PUBLIC",
+  "visibleRoles": [],
+  "visibleTenants": [],
+  "endpointConfig": "???",
+  "endpointSecurity": null,
+  "gatewayEnvironments": "Production and Sandbox",
+  "labels": [],
+  "sequences": [],
+  "subscriptionAvailability": null,
+  "subscriptionAvailableTenants": [],
+  "additionalProperties": {},
+  "accessControl": "NONE",
+  "accessControlRoles": [],
+  "businessInformation": {
+    "businessOwner": null,
+    "businessOwnerEmail": null,
+    "technicalOwner": null,
+    "technicalOwnerEmail": null
+  },
+  "corsConfiguration": {
+    "corsConfigurationEnabled": true,
+    "accessControlAllowOrigins": [
+      "*"
+    ],
+    "accessControlAllowCredentials": false,
+    "accessControlAllowHeaders": ["???"],
+    "accessControlAllowMethods": ["???"]
+  }
+}

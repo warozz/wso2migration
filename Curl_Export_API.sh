@@ -1,0 +1,1 @@
+curl -H "Authorization:Basic YWRtaW46VGhhaWxpZmVAMjAxOQ===" -X GET "https://10.102.60.112:9443/api-import-export-2.1.0-v3/export-api?name=AlfrescoApi&version=1.0&provider=admin" -k --> /tmp/myAPI2.zip

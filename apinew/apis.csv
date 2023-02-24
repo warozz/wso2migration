@@ -1,0 +1,11 @@
+id,name,description,context,version,provider,status,production_endpoint,enable_CORS,accessControlAllowHeaders,accessControlAllowMethods,authType,application_name,isDefaultVersion,intial_Duration,maxDuration,Timeout_Duration
+,AgentSubmitTransfer,null,/AgentSubmitTransfer,1.0,admin,PUBLISHED,null,false,,,,,false,,,
+,AlfrescoApi,null,/AlfrescoApi,1.0,admin,PUBLISHED,null,false,,,,CIMB-Application CSVApplication DefaultApplication  ,false,,,
+,Alterate-insertAddress,Alterate-insertAddress,/AlterateWs/rest/alterate/insertaddress,1.0,admin,PUBLISHED,null,false,,,,Alterate ,false,,,
+,AMLO_Checking,null,/AMLO_Checking,1.0,admin,PUBLISHED,null,false,,,,AMLOapplication ,false,,,
+,API_DDC,API_DDC,/API_DDC/rest/insertCaseApplication/caseapp,1.0,admin,PUBLISHED,null,false,,,,,false,,,
+,API_DDC_ECOM,API_DDC_ECOM,/API_DDC/rest/insertCaseApplication/caseappEcom,1.0,admin,PUBLISHED,null,false,,,,CoreRestWS  ,false,,,
+,APIblacklistService,null,/APIblacklistService,1.0,admin,PUBLISHED,null,false,,,,ClaimBlacklist ,false,,,
+,APICheckDataLegal,null,/request/checkdatalegal,1.0,admin,PUBLISHED,null,false,,,, ,false,,,
+,APICheckDataLegal2,null,/request/checkdatalegal2,1.0,admin,CREATED,null,false,,,,,false,,,
+,ApiGrouplife-LoginAdmin,null,/ApiGrouplife/LoginAdmin,1.0,admin,PUBLISHED,null,false,,,,ApiGrouplife ,false,,,
